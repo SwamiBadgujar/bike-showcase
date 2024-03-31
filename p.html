@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment</title>
+  </head>
+  <body bgcolor="lightgreen">
+    <center><form><br><br>
+    <h1>Payment Information</h1>
+    <br>
+    <p><h3>Card Type:
+      <select name="card_type" id="card_type" required="">
+        <option value="">---selecr a Card type--</option>
+        <option value="visa">Visa</option>
+        <option value="rupy">Rupay</option>
+        <option value="master card">Master Card</option>        
+      </select>    
+     </h3></p>  
+    <br><br>
+    <p><h3>
+      Card Number: <input type="number" name="card Number" id="Card Number" required="">
+    </h3></p>
+    <br><br>
+    <p><h3>
+      Expiration Date: <input type="date" name="exp_date" id="exp_date" required="">
+    </h3></p>
+    <br><br>
+    <p><h3>
+      CVV:  <input type="password" name="CVV" id="CVV" required="">
+    </h3></p>
+    <br><br>
+    <input type="button"  value="Pay Now" onclick="fun()"/>
+    </form>
+    <br>
+    <center><form action="y.html">
+        <button type="submit">Back</button>
+     </form></center>
+    
+    </center>
+  </body>
+  <script>
+    function fun(){
+      alert("payment successful");
+      window.location.assign("pay.html")
+    }
+  </script>
+</html>

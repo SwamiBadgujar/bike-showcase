@@ -1,0 +1,58 @@
+<style> 
+ body {
+               	background-image: url(bg.jpg)
+  }
+ </style>
+<center><h1>User Login</h1></center>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <center><img src="logo-removebg-preview.png" alt="shop" width="300" height="300">
+  </div>
+<br>
+
+  <div class="container">
+   <center> <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="name" required>	</center>
+<br>
+    <center><label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="pass" required>
+        <center>
+    <input type="button" value="login" onclick="fun()">
+    <label>
+    <center>  <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+<br>
+ <center><button type="button" class="cancelbtn">Cancel</button>
+   <span class="psw">  Forgot password?</center></span></center> 
+  </div>
+</form>
+
+</body>
+<script>
+  function fun(){
+                var user = document.getElementById("name").value;
+                var pass = document.getElementById("pass").value;
+                if (user == "dnp" && pass == "12345678")
+                {
+                  alert("login success");
+                  window.location.assign("c.html");
+
+
+                }
+                else
+                {
+                  alert("not correct");
+                }
+                
+              }
+</script>
+<style>
+  .container input[type="button"]{
+    margin: 10px;
+    width: 10%;
+    background-color: rgba(55, 169, 160, 0.71);
+  }
+</style>
+</html>
